@@ -1,0 +1,64 @@
+.display {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.current-weather {
+  width: 40%;
+  max-height: 50%;
+  margin: 8vh auto;
+  padding: 5px 20px;
+  border-radius: 0;
+  color: white;
+  background-color: #2b3939fc;
+}
+
+.current-weather > .weather-card {
+  border: none;
+}
+
+.current-weather > .weather-card > .date {
+  color: #42a3ef;
+  background-color: white;
+}
+
+.current-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#curr-date {
+  background-color: white;
+  color: #42a3ef;
+}
+
+#curr-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 25px;
+}
+
+#weekly-btn {
+  position: relative;
+  top: 20px;
+  border: solid 1px white;
+  border-radius: 4px;
+}
+
+.select {
+  background-color: white;
+  color: #42a3ef;
+}
+
+.unselect {
+  background-color: #42a3ef;
+  color: white;
+}
+
+/* #weekly-btn:hover {
+  background-color: white;
+  color: #42a3ef;
+} */

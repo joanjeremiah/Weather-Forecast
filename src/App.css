@@ -1,0 +1,122 @@
+body {
+  overscroll-behavior: contain;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #42a3ef;
+}
+
+.blueTxt {
+  color: #42a3ef;
+}
+
+.app-title {
+  width: 100%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+@keyframes logoanim {
+  0% {
+    opacity: 0.7;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.user-input {
+  position: relative;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-input > div {
+  width: 100%;
+}
+
+.btn-group > button {
+  display: flex;
+  margin: 0 4px;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+#city-name {
+  padding: 3px;
+  height: 1.7em;
+  /* width: 280px; */
+  width: 100%;
+  font-size: 1.1rem;
+  color: rgb(50, 48, 48);
+  border: solid 1px #42a3ef;
+  border-radius: 0;
+}
+
+#city-name:focus {
+  outline: none;
+  border: solid 2px #42a3ef;
+  -webkit-box-shadow: 2px 2px 15px 0px rgb(235 104 72);
+  -moz-box-shadow: 2px 2px 15px 0px rgb(235 104 72);
+  box-shadow: 2px 2px 15px 0px rgb(235 104 72);
+}
+
+#loc-tag {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+button {
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  background-color: #42a3ef;
+  border: none;
+  height: 2.3rem;
+  width: 10rem;
+  margin: .5rem auto !important;
+  
+}
+
+#forecast-btn{
+  float: right;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Mobile version */
+@media screen and (min-width: 320px) and (max-width: 800px){
+  .container {
+    display: grid !important;
+    grid-template-rows: 120px 50px 180px 1fr;
+    flex-direction: column;
+    height: 100%;
+  }
+}
